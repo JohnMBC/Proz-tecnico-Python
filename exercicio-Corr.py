@@ -4,4 +4,4 @@ def calc_media(lista):
     
 notas = [10, 5, 58]
 resultado = calc_media(notas)
-print(f"{resultado:.2f}")
+print(f"{resultado:.1f}")
