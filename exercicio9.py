@@ -15,11 +15,11 @@ operador = str(input("Digite qual operador: "))
 outro_numero = int(input("Digite outro numero: "))
 if operador == "+":
     print("o resultado da soma e: {}" .format(numero + outro_numero))
-if operador == "-":
+elif operador == "-":
     print(calculadora(numero, outro_numero)[1])
-if operador == "*":
+elif operador == "*":
     print(calculadora(numero, outro_numero)[2])
-if operador == "/":
+elif operador == "/":
     print(calculadora(numero, outro_numero)[3])
  
 else:
