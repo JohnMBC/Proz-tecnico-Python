@@ -35,12 +35,14 @@ with open ("dados_de_venda.txt", "r") as arquivo: # Abrindo o arquivo porque que
 
       print(faturamento)
       
-      
+      with open("dados_de_venda.txt", "r") as arquivo:# Abrindo o arquivo porque quero ler no arquivo
+            texto = arquivo.read() # ler o arquivo e armazenar dentro da variavel texto
+            linhas = texto.split("\n") # method pega texto e separa cada item de acordo com (?) "enter"
+            numero_linhas = len(linhas) # method len pega o tamanho da lista
+            numero_colunas = len(linhas[0].split(";")) # method split pega o texto e separa cada item de acordo com (?) ";"
+            print("Número de linhas:", numero_linhas) # printar o numero de linhas
+            print("Número de colunas:", numero_colunas)# printar o numero de colunas
 
       
-
-      
-
-        
        
 
